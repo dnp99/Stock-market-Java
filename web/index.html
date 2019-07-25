@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Assignment-2</title>
+
+  <!-- Font Awesome Icons -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="css/creative.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Assignment: 2 - Current Stock Prices API</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-10 align-self-end">
+            <h3 class="text-uppercase text-white font-weight-bold" id="firstAPI_name"> API call is being made.....</h3>
+          <hr class="divider my-4">
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+          <p class="text-white-75 font-weight-light "
+             id="firstAPI_date">
+          
+          </p>
+          <p class="text-white-75 font-weight-light "
+             id="firstAPI_open">
+          
+          </p>
+          <p class="text-white-75 font-weight-light"
+             id="firstAPI_close">
+          
+          </p>
+          <p class="text-white-75 font-weight-light"
+             id="firstAPI_high">
+          
+          </p>
+          <p class="text-white-75 font-weight-light"
+             id="firstAPI_low">
+          
+          </p>
+          <p class="text-white-75 font-weight-light"
+             id="firstAPI_volume">
+          
+          </p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="page-section bg-primary" id="about">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="text-white mt-0">External web service used - Quandl.com</h2>
+          <hr class="divider light my-4">
+          <p class="text-white-50 mb-4">
+              Stock Market data is referenced from XETR!</br> 
+              Xetra (Market Identifier Code (MIC): XETR) is a trading venue operated by Frankfurter Wertpapierbörse </br>
+             </p>
+          <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">More Companies</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="page-section" id="services">
+    <div class="container">
+      <h2 class="text-center mt-0">At Your Service</h2>
+      <hr class="divider my-4">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-building  text-primary mb-4"></i>
+            <h3 class="h4 mb-2">IBM Corp.</h3>
+            <p class="text-muted mb-0" id="IBMAPI" >Click Here for Stock Price!</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-plane text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Boeing Co</h3>
+            <p class="text-muted mb-0" id="BoeingAPI">Click Here for Stock Price!</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-car text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Tesla, Inc.</h3>
+            <p class="text-muted mb-0" id="TESLAAPI">Click Here for Stock Price!</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-user text-primary mb-4"></i>
+            <h3 class="h3 mb-2">Made By</h3>
+            <p class="text-muted mb-0" id="admin">Click to find out!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Call to Action Section -->
+  <section class="page-section bg-dark text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">Find Deep Patel on LinkdIn </h2>
+      <a class="btn btn-light btn-xl" href="https://www.linkedin.com/in/deep-patel4283/">Connect !</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="page-section" id="contact">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="mt-0">Let's Get In Touch!</h2>
+          <hr class="divider my-4">
+          <p class="text-muted mb-5">Ready to start your next project?
+              Give us a call or send us an email and I will get back to you as soon as possible!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 ml-auto text-center">
+          <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+          <div id="adminPhone">Click on made by in services section</div>
+        </div>
+        <div class="col-lg-4 mr-auto text-center">
+          <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+          <!-- Make sure to change the email address in anchor text AND the link below! -->
+          <a class="d-block" href="mailto:contact@yourwebsite.com" id="adminEmail">Click on made by in services section</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light py-5">
+    <div class="container">
+      <div class="small text-center text-muted">Copyright &copy; 2019 - Bootstrap - Deep Patel </div>
+      <a href="https://iexcloud.io">Data provided by IEX Cloud</a>
+ 
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/creative.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script>
+    
+$(function () 
+{
+    let data=null;
+    var request = new XMLHttpRequest();
+    var temp='http://localhost:8080/EA_Assignment_2/api/stock/apple/latest';
+      console.log('URL: '+temp);
+      request.open('GET',temp,true);
+      request.send();
+      request.onload=function()
+      {
+        console.log('Status Code: '+request.status);
+        if (request.status >= 200 && request.status < 400)
+        {
+            data = JSON.parse((this.response).toString());
+            console.log("Result: " + data.latestTime);
+            {
+                $("#firstAPI_name").html(data.companyName);
+                $("#firstAPI_date").html(data.timestamp);
+                $("#firstAPI_open").html("OPEN: "+data.open);
+                $("#firstAPI_close").html("CLOSE: "+data.close);
+                $("#firstAPI_high").html("HIGH: "+data.high);
+                $("#firstAPI_low").html("LOW: "+data.low);
+                $("#firstAPI_volume").html("VOLUME: "+data.volume);
+            }
+          
+        }
+        else
+        {
+           console.log(" First Api error");
+        }
+      }
+      
+      /*************************************** when user click on IBM link     ***************************************************/
+      $("#IBMAPI").click(function(){
+        let data=null;
+        var request = new XMLHttpRequest();
+        var temp='http://localhost:8080/EA_Assignment_2/api/stock/ibm/latest';
+        console.log('URL: '+temp);
+        request.open('GET',temp,true);
+        request.send();
+        request.onload=function()
+        {
+            console.log('Status Code: '+request.status);
+            if (request.status >= 200 && request.status < 400)
+            {
+                data = JSON.parse((this.response).toString());
+               //console.log("Response Status: "+data.status);
+               console.log("Result: " + data.close + data.timestamp +data.open+data.close);
+               {
+                    $("#IBMAPI").html(
+                          
+                        data.timestamp 
+                         +"</br>Low: "+data.low
+                         +"</br>High: "+data.high
+                         +"</br>Open: "+data.open
+                         +"</br>Close: "+data.close
+                         +"</br>Volume: "+data.volume
+                         );
+            }
+        }
+        else
+        {
+           console.log(" IBM Api error");
+        }
+      }
+          
+         
+      });
+      
+      
+     /*************************************** when user click on Boeing link     ***************************************************/
+      $("#BoeingAPI").click(function(){
+        let data=null;
+        var request = new XMLHttpRequest();
+        var temp='http://localhost:8080/EA_Assignment_2/api/stock/boeing/latest';
+        console.log('URL: '+temp);
+        request.open('GET',temp,true);
+        request.send();
+        request.onload=function()
+        {
+            console.log('Status Code: '+request.status);
+            if (request.status >= 200 && request.status < 400)
+            {
+                data = JSON.parse((this.response).toString());
+               //console.log("Response Status: "+data.status);
+               console.log("Result: " + data.close + data.timestamp +data.open+data.close);
+               {
+                    $("#BoeingAPI").html(
+                        data.timestamp 
+                         +"</br>Low: "+data.low
+                         +"</br>High: "+data.high
+                         +"</br>Open: "+data.open
+                         +"</br>Close: "+data.close
+                         +"</br>Volume: "+data.volume
+                         );
+            }
+        }
+        else
+        {
+           console.log("Boeing Api error");
+        }
+      }
+          
+         
+      }); 
+      
+      
+           /*************************************** when user click on Porsche  link     ***************************************************/
+      $("#TESLAAPI").click(function(){
+        let data=null;
+        var request = new XMLHttpRequest();
+        var temp='http://localhost:8080/EA_Assignment_2/api/stock/tesla/latest';
+        console.log('URL: '+temp);
+        request.open('GET',temp,true);
+        request.send();
+        request.onload=function()
+        {
+            console.log('Status Code: '+request.status);
+            if (request.status >= 200 && request.status < 400)
+            {
+                data = JSON.parse((this.response).toString());
+               //console.log("Response Status: "+data.status);
+               console.log("Result: " + data.close + data.timestamp +data.open+data.close);
+               {
+                    $("#TESLAAPI").html(
+                        data.timestamp 
+                         +"</br>Low: "+data.low
+                         +"</br>High: "+data.high
+                         +"</br>Open: "+data.open
+                         +"</br>Close: "+data.close
+                         +"</br>Volume: "+data.volume
+                         );
+            }
+        }
+        else
+        {
+           console.log(" Porsche Api error");
+        }
+      }
+          
+         
+      }); 
+      
+      
+           /*************************************** Get Admin Info from Database    ***************************************************/
+      $("#admin").click(function(){
+        let data=null;
+        var request = new XMLHttpRequest();
+        var temp='http://localhost:8080/EA_Assignment_2/api/user/admin';
+        console.log('URL: '+temp);
+        request.open('GET',temp,true);
+        request.send();
+        request.onload=function()
+        {
+            console.log('Status Code: '+request.status);
+            if (request.status >= 200 && request.status < 400)
+            {
+                data = JSON.parse((this.response));
+               //console.log("Response Status: "+data.status);
+               console.log("Result: " + this.response);
+               {
+                    $("#admin").html(
+                        data.name
+                        +"</br>Email: "+data.email
+                        +"</br>Github: "+data.github
+                        +"</br>LinkdIn: "+data.linkdin
+                         );
+                    $("#adminPhone").html(
+                        data.phone    
+                        );
+                    $("#adminEmail").html(
+                        data.email    
+                        );
+            }
+        }
+        else
+        {
+           console.log(" Info Api error");
+        }
+      }
+          
+         
+      });
+});
+
+  </script>
+
+</body>
+
+</html>
