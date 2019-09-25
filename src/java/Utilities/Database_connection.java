@@ -19,7 +19,7 @@ public class Database_connection {
             //create the connection
             
         java.sql.Connection con=DriverManager.getConnection
-        ("jdbc:oracle:thin:@calvin.humber.ca:1521:grok","N01239042","ORACLE");
+        ("jdbc:oracle:thin:@calvin.humber.ca:1521:grok","N0123456","ORACLE123");
           return con;
     }
     
